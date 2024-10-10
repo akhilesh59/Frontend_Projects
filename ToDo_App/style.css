@@ -1,0 +1,57 @@
+html {
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:554692793. */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --light-gray: #7284a1;
+}
+
+.input-section {
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.todo-input {
+    flex-basis: 60%;
+}
+
+.list-todo-heading > div {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.todo-no {
+    flex-basis: 5%;
+    color: black;
+}
+
+.todo-detail {
+    flex-basis: 55%;
+}
+
+.todo-status {
+    flex-basis: 10%;
+}
+
+.todo-action {
+    flex-basis: 15%;
+}
+
+.todo-action button {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.todo-item {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
