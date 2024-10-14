@@ -20,19 +20,19 @@
             <div class="row">
                 <div class="input-section d-flex flex-row justify-content-center">
                     <div class="todo-input">
-                        <input type="text" class="form-control" placeholder="Write another to-do">
+                        <input type="text" id="todo-input-bar" class="form-control" placeholder="Write another to-do ..">
                     </div>
-                    <div class="save-todo btn btn-primary">
+                    <div class="save-todo btn btn-primary disabled" id="save-todo">
                         Save
                     </div>
-                    <div class="ge-todos btn btn-warning">
+                    <div class="get-todos btn btn-warning" id="get-todos">
                         Get Pending Todos
                     </div>
                 </div>
             </div>
 
             <!------list of todo's>------> 
-            <div class="todo-data">
+            <div class="todo-data" id="todo-data">
                 <div class="row">
                     <div class="list-todo-heading d-flex flex-row justify-content-between">
                         <div class="todo-no">No.</div>
@@ -43,17 +43,8 @@
                 </div>
                 <hr>
 
-                <div class="row">
-                    <div class="todo-item d-flex flex-row justify-content-between align-items-center">
-                        <div class="todo-no">1.</div>
-                        <div class="todo-detail text-muted">Complete the Action item on todo's.</div>
-                        <div class="todo-status text-muted">In progress</div>
-                        <div class="todo-action">
-                            <button class="btn btn-danger">Delete</button>
-                            <button class="btn btn-success">Finished</button>
-                        </div>
-                    </div>
-                    <hr>
+                <div class="todo-data-list" id="todo-data-list">
+                    <!-- Todo items will be added here -->
                 </div>
             </div>
         </div>
@@ -61,6 +52,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
